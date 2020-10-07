@@ -1,0 +1,25 @@
+-- Test
+USE Test;
+CREATE TABLE Produkte (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   pname VARCHAR(255) NOT NULL
+);
+INSERT INTO Produkte (`pname`) VALUES ('Windows 10');
+INSERT INTO Produkte (`pname`) VALUES ('Windows 10');
+INSERT INTO Produkte (`pname`) VALUES ('LOL-OS');
+INSERT INTO Produkte (`pname`) VALUES ('LOL-OS');
+INSERT INTO Produkte (`pname`) VALUES ('Test123');
+
+--JDBC Aufgabe
+CREATE TABLE Invoice (
+id INT AUTO_INCREMENT PRIMARY KEY,
+date DATE NOT NULL,
+description VARCHAR(20) NOT NULL,
+value INT NOT NULL,
+paid BOOLEAN NOT NULL);
+INSERT INTO Invoice (date,description,value,paid) VALUES ("2020-08-20", "Computer", 1, true);
+INSERT INTO Invoice (date,description,value,paid) VALUES ("2020-09-15", "Taschenrechner", 2, true);
+INSERT INTO Invoice (date,description,value,paid) VALUES ("2020-10-18", "Mappe", 5, true);
+SELECT * FROM Invoice;
+
+
